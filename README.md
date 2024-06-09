@@ -11,7 +11,22 @@ Zylinska (2023), Composite of frames from A Gift of the World (Oedipus on the Je
 
 For Zylinska, the editing process was intuitive and consisted of her own visual and corporeal responses to both the script and the GAN images, which she references as a dream-like state, where neural networks find patterns in images not so much in a logical preprogrammed way but rather by using previous data and memories as prompts for making new connections between data points and for generating new data. In this work, she finds herself dreaming _with_ but also _against_ the AI algorithm underpinning the model. The "counterdream" aspect was critical given the sociopolitical limitations of AI technology, which have been well documented by feminist and decolonial cultural critics, revealing not only gender and racial bias but also the exclusionary and unjust logic underlying many of its founding principles. Not to mention its extractivism when it comes to both human and natural resources. Zylinska was curious about what AI would do to the source material, while intentionally serving as both a dream catcher and analyst in the creation process. [5]
 
-## Approach
+## Approach & Process
+
+# Text Generation
+
+# CLIP Text Encoding
+[CLIP (https://github.com/openai/CLIP)]
+
+# CLIP-Guided Diffusion
+[[CLIP-Guided Diffusion by EleutherAI](https://www.eleuther.ai/artifacts/clip-guided-diffusion)]
+
+I had a lot of issues locating the latent vector to map my text encoding from CLIP to StyleGAN2's latent space due to dependencies being updated and becoming conflicted with each other. After researching, I found the CLIP-Guided Diffusion model by EleutherAI to successfully generate images with text prompts. 
+
+This particular model is adapted from [Katherine Crowson(https://twitter.com/RiversHaveWings)]'s [work (https://github.com/crowsonkb/clip-guided-diffusion)]. It uses [OpenAI's 256x256 unconditional ImageNet diffusion model (https://github.com/openai/guided-diffusion)] together with [CLIP (https://github.com/openai/CLIP)] to connect text prompts with images. 
+
+# Image Interpolation
+Each image takes about 9 minutes to generate. In the interest of on-time delivery of this project, I generated the first scene (first 10 prompts) of the script and interpolated the 10 images by adapting the code from the Class 7 notebook.
 
 # Bibliography
 1. La Jetée. (2024, June 6). In Wikipedia. https://en.wikipedia.org/wiki/La_Jet%C3%A9e
