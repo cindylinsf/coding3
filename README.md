@@ -132,6 +132,27 @@ I then ran the same 10 prompts through StabilityAI's SDXL Turbo model, which is 
 
 This time, I would change the prompt slightly where I would change the name of the character to a general descriptor like "a woman" to see if I would get different results. At times, the model generated illustrations instead of photographs. I would then change the prompts to attempt to get photographs.
 
+Results:
+
+![Alt text](stable_diffusion_sdxl_output/1.png)
+![Alt text](stable_diffusion_sdxl_output/2.png)
+![Alt text](stable_diffusion_sdxl_output/2a.png)
+![Alt text](stable_diffusion_sdxl_output/3.png)
+![Alt text](stable_diffusion_sdxl_output/3a.png)
+![Alt text](stable_diffusion_sdxl_output/4.png)
+![Alt text](stable_diffusion_sdxl_output/5.png)
+![Alt text](stable_diffusion_sdxl_output/6.png)
+![Alt text](stable_diffusion_sdxl_output/6a.png)
+![Alt text](stable_diffusion_sdxl_output/6b.png)
+![Alt text](stable_diffusion_sdxl_output/7.png)
+![Alt text](stable_diffusion_sdxl_output/8.png)
+![Alt text](stable_diffusion_sdxl_output/9.png)
+![Alt text](stable_diffusion_sdxl_output/9a.png)
+![Alt text](stable_diffusion_sdxl_output/9b.png)
+![Alt text](stable_diffusion_sdxl_output/10.png)
+![Alt text](stable_diffusion_sdxl_output/10a.png)
+![Alt text](stable_diffusion_sdxl_output/10b.png)
+
 Prompts (sequentially matched to each image from left to right):
 1. The rain pours down heavily outside the dimly lit bodega.
 2. ANNIE sits at a small table, staring at a bowl of tea glasses.
