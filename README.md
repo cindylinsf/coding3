@@ -182,8 +182,7 @@ Prompts (sequentially matched to each image from left to right):
 ### Image Interpolation
 Finally, I took both sets of images and ran them through [[RunwayML](https://app.runwayml.com/)]'s frame interpolation tool to interpolate the images.
 
-![CLIP-Guided Diffusion results interpolated](clip_guided_frame_interpolation.mp4)
-![SDXL-Turbo results interpolated](sdxl_turbo_frame_interpolation.mp4)
+[Link to the video](https://app.runwayml.com/creation/9d3e3147-14e1-4602-ab1f-794522023dc1)
 
 ## Results & Evaluation
 
