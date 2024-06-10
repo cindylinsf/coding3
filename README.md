@@ -26,9 +26,9 @@ When I came across Zylinska's project, I thought it was interesting how GPT-2 fl
 
 🤖 **Model used:**
 - [[Andrej Karpathy's minibpe repo](https://github.com/karpathy/minbpe)]
-- NanoGPT from Class 5 Notebooks
+- Class 5 Notebooks
 
-For this part of the project, I adapted the Class 5 notebooks to create and prepare a new dataset by using [[the original 1962 film script] (http://www.script-o-rama.com/movie_scripts/b/the-birds-script-screenplay.html)] and generate new scripts by adapting Class 5 notebooks. 
+For this part of the project, I adapted the Class 5 notebooks to create and prepare a new dataset by using [[the original 1962 film script](http://www.script-o-rama.com/movie_scripts/b/the-birds-script-screenplay.html)] and generate new scripts by adapting Class 5 notebooks. 
 
 A separate tokenization was not needed with the Class 5 notebooks, but since I was curious about the tokenization process, I tokenized the film script using Andrej Karapthy's minibpe repo mentioned in the class notebook. The results and the Google Colab notebook `00_tokenize_script` are referenced above under `🗂️ Project Files`.
 
@@ -36,7 +36,7 @@ In notebook `01_new_script_genreation`, I first tried to train the model from sc
 
 During the fine-tuning process, I first mimicked Zylinska's process by setting the start seed for the model by using the first line of the original script. Then I realized that the model was using the start seed repeatedly for each new scene, so I removed the start seed. The first two generated outputs with the start seed are in the `output_scripts` folder as `output_GPT2_v1` and `output_GPT2_v2`.
 
-After that, I let the GPT2 model generate freely without the start seed for four additional times, the results are collected under `output_GPT2_v3`, `output_GPT2_v4`, `output_GPT2_v5`, and `output_GPT2_v6`. I then combined these four outputs and fed them through ChatGPT 4o:
+After that, I let the GPT2 model generate freely without the start seed four additional times, the results were collected under `output_GPT2_v3`, `output_GPT2_v4`, `output_GPT2_v5`, and `output_GPT2_v6` Google Docs. I then combined these four outputs and fed them through ChatGPT 4o:
 
 > The PDF contains a few different versions of a short film draft. Please clean up this short film draft and rewrite it to make it coherent for today's audience.
 
@@ -53,7 +53,7 @@ The final script output is recorded in the `final_script_generated_by_gpt4o` Goo
 🤖 **Model used:**
 - [[StyleGAN-T model](https://github.com/autonomousvision/stylegan-t/blob/main/README.md)]
 
-Here, I tried to run the generated script through the StyleGAN-T model, which combines transformers with StyleGAN. This means that I could omit CLIP text encoding mapping to StyleGAN's latent space. However, I was not able to overcome dependencies and package conflicts in the StyleGAN-T model. After 2+ hours of debugging and trying various ways of installing different packages, I decided to try other methods. 
+Here, I tried to run the generated script through the StyleGAN-T model, which combines transformers with StyleGAN. This means that I could omit mapping the CLIP text encoding to StyleGAN's latent space. However, I was not able to overcome dependencies and package conflicts in the StyleGAN-T model. After 2+ hours of debugging, I decided to try other methods. 
 
 ### CLIP Text Encoding
 🗂️ **Project Files:**
@@ -95,7 +95,7 @@ I decided to try stable diffusion since it is a generative text-to-image model. 
 
 After researching, I found the CLIP-Guided Diffusion model by EleutherAI to successfully generate images with text prompts. This particular model is adapted from [[Katherine Crowson's work](https://github.com/crowsonkb/clip-guided-diffusion)]. It uses [[OpenAI's 256x256 unconditional ImageNet diffusion model](https://github.com/openai/guided-diffusion)] together with CLIP to connect text prompts with images. 
 
-I adapted EleutherAI's notebook (`06_CLIP Guided Diffusion HQ 256x256` referenced in the `🗂️ Project Files` above) for this. I pulled apart the script and used the stage directions for each prompt, compiled in a Google Doc named `Prompts for The Birds Remake`, referenced in the `🗂️ Project Files` above.
+I used EleutherAI's Google Colab notebook (`06_CLIP Guided Diffusion HQ 256x256` referenced in the `🗂️ Project Files` above) as is, only changing the prompts. I pulled apart the script and used the stage directions for each prompt, compiled in a Google Doc named `Prompts for The Birds Remake`, referenced in the `🗂️ Project Files` above.
 
 Each image took about 9 minutes to generate. In the interest of on-time delivery for this project, I generated the first scene (first 10 prompts) of the script.
 
@@ -112,7 +112,7 @@ Here are the results:
 ![Alt text](clip_diffusion_output/9.png)
 ![Alt text](clip_diffusion_output/10.png)
 
-Prompts (sequentially matched to each image from left to right):
+Prompts (sequentially matched to each image from left to right, top to bottom):
 1. The rain pours down heavily outside the dimly lit bodega.
 2. ANNIE sits at a small table, staring at a bowl of tea glasses.
 3. She glances at her phone
@@ -136,7 +136,7 @@ I ran the same 10 prompts through StabilityAI's SDXL Turbo model, which is meant
 
 The generation was very fast. It took mere seconds to generate an image.
 
-This time, I would change the prompt slightly where I would change the name of the character to a general descriptor like "a woman" to see if I would get different results. At times, the model generated illustrations instead of photographs. I would then change the prompts to attempt to get photographs.
+This time, I modified the prompt slightly where I would change the name of the character to a general descriptor like "a woman" to see if I would get different results. At times, the model generated illustrations instead of photographs. I would then change the prompts to attempt to get the output in the photograph format.
 
 Results:
 
@@ -159,7 +159,7 @@ Results:
 ![Alt text](stable_diffusion_sdxl_output/10a.png)
 ![Alt text](stable_diffusion_sdxl_output/10b.png)
 
-Prompts (sequentially matched to each image from left to right):
+Prompts (sequentially matched to each image from left to right, top to bottom):
 1. The rain pours down heavily outside the dimly lit bodega.
 2. ANNIE sits at a small table, staring at a bowl of tea glasses.
 2a. A woman sits at a small table, staring at a bowl of tea glasses.
