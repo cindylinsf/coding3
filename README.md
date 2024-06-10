@@ -85,17 +85,20 @@ I decided to try stable diffusion since it is a generative text-to-image model. 
 ### CLIP-Guided Diffusion
 🗂️ **Project Files:**
 - [[Google Colab Notebook 06](https://colab.research.google.com/drive/1A3iLLQFrVtWMwtyHAbFW05ysFHuS2wNf?usp=sharing)]
+- [[The full list of prompts derived from the script](https://docs.google.com/document/d/1CxwlhFuR-utL1xmJVt2GeadrJO1squYzX-DkUVv6Cv0/edit?usp=sharing)]
 
 🤖 **Model used:**
 - [[CLIP-Guided Diffusion by EleutherAI](https://www.eleuther.ai/artifacts/clip-guided-diffusion)]
 
-I had a lot of issues locating the latent vector to map my text encoding from CLIP to StyleGAN2's latent space due to dependencies being updated and becoming conflicted with each other. After researching, I found the CLIP-Guided Diffusion model by EleutherAI to successfully generate images with text prompts. 
+After researching, I found the CLIP-Guided Diffusion model by EleutherAI to successfully generate images with text prompts. 
 
-This particular model is adapted from [Katherine Crowson(https://twitter.com/RiversHaveWings)]'s [work (https://github.com/crowsonkb/clip-guided-diffusion)]. It uses [OpenAI's 256x256 unconditional ImageNet diffusion model (https://github.com/openai/guided-diffusion)] together with [CLIP (https://github.com/openai/CLIP)] to connect text prompts with images. 
+This particular model is adapted from [[Katherine Crowson's work](https://github.com/crowsonkb/clip-guided-diffusion)]. It uses [[OpenAI's 256x256 unconditional ImageNet diffusion model](https://github.com/openai/guided-diffusion)] together with CLIP to connect text prompts with images. 
 
-Each image takes about 9 minutes to generate. In the interest of on-time delivery of this project, I only generated the first scene (first 10 prompts) of the script.
+I pulled apart the script and used the stage directions for each prompt, which are compiled in a Google Doc named `Prompts for The Birds Remake`, referenced in the `🗂️ Project Files` above. Each image took about 9 minutes to generate. In the interest of on-time delivery of this project, I only generated the first scene (first 10 prompts) of the script.
 
-Full list of prompts: https://docs.google.com/document/d/1CxwlhFuR-utL1xmJVt2GeadrJO1squYzX-DkUVv6Cv0/edit?usp=sharing 
+Here are the results:
+
+
 
 ### Stable Diffusion #2
 🗂️ **Project Files:**
