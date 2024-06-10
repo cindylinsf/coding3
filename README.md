@@ -180,6 +180,9 @@ Prompts (sequentially matched to each image from left to right):
 10b. the woman slips the envelope into her bag.
 
 ### Image Interpolation
+**🗂️ Project Files:**
+- [[Video outputs](https://drive.google.com/drive/folders/1IvNyvPaiyG3bc6tGiZlXT1pTJO4v-r1V?usp=sharing)]
+
 Finally, I took both sets of images and ran them through [[RunwayML](https://app.runwayml.com/)]'s frame interpolation tool to interpolate the images.
 
 <a href="https://app.runwayml.com/creation/9d3e3147-14e1-4602-ab1f-794522023dc1" target="_blank">Link to the CLIP-Guided Diffusion results video</a>
