@@ -32,7 +32,9 @@ For this part of the project, I adapted the Class 5 notebooks to create and prep
 
 A separate tokenization was not needed with the Class 5 notebooks, but since I was curious about the tokenization process, I tokenized the film script using Andrej Karapthy's minibpe repo mentioned in the class notebook. The results and the Google Colab notebook `00_tokenize_script` are referenced above under `🗂️ Project Files`.
 
-I first mimicked Zylinska's process by setting the start seed for the model by using the first line of the original script. Then I realized that the model used it repeatedly for each new scene, so I removed the start seed. The first two generated outputs with the start seed are in the `output_scripts` folder as `output_GPT2_v1` and `output_GPT2_v2`.
+In notebook `01_new_script_genreation`, I first tried to train the model from scratch. The results were mostly gibberish. Then, in the notebook `02_new_script_genreation_by_finetuning`, I fined-tuned the GPT2 model, which generated results that were much more coherent. 
+
+During the fine-tuning process, I first mimicked Zylinska's process by setting the start seed for the model by using the first line of the original script. Then I realized that the model was using the start seed repeatedly for each new scene, so I removed the start seed. The first two generated outputs with the start seed are in the `output_scripts` folder as `output_GPT2_v1` and `output_GPT2_v2`.
 
 After that, I let the GPT2 model generate freely without the start seed for four additional times, the results are collected under `output_GPT2_v3`, `output_GPT2_v4`, `output_GPT2_v5`, and `output_GPT2_v6`. I then combined these four outputs and fed them through ChatGPT 4o:
 
@@ -122,7 +124,7 @@ Prompts (sequentially matched to each image from left to right):
 9. Annie nods
 10. Annie slips the envelope into her bag.
 
-### Stable Diffusion #2
+### Stable Diffusion SDXL Turbo Model
 🗂️ **Project Files:**
 - [[Google Colab Notebook 07](https://colab.research.google.com/drive/1LK7CT87Ui-YsE0CG966QbcX2DffzVIZf?usp=sharing)]
 - [[Output images](stable_diffusion_sdxl_output)]
@@ -130,7 +132,9 @@ Prompts (sequentially matched to each image from left to right):
 🤖 **Models used:**
 - [[StabilityAI's SDXL Turbo model on Hugging Face](https://huggingface.co/stabilityai/sdxl-turbo)]
 
-I then ran the same 10 prompts through StabilityAI's SDXL Turbo model, which is meant to be a fast generative model, based on a novel training method called Adversarial Diffusion Distillation (ADD), which allows sampling large-scale foundational image diffusion models in 1 to 4 steps at high image quality. This approach uses score distillation to leverage large-scale off-the-shelf image diffusion models as a teacher signal and combines this with an adversarial loss to ensure high image fidelity even in the low-step regime of one or two sampling steps. [6] The generation was very fast. It took seconds to generate an image.
+I ran the same 10 prompts through StabilityAI's SDXL Turbo model, which is meant to be a fast generative model, based on a novel training method called Adversarial Diffusion Distillation (ADD). This allows sampling large-scale foundational image diffusion models in 1 to 4 steps at high image quality. This approach uses score distillation to leverage large-scale off-the-shelf image diffusion models as a teacher signal and combines this with an adversarial loss to ensure high image fidelity even in the low-step regime of one or two sampling steps. [6] 
+
+The generation was very fast. It took mere seconds to generate an image.
 
 This time, I would change the prompt slightly where I would change the name of the character to a general descriptor like "a woman" to see if I would get different results. At times, the model generated illustrations instead of photographs. I would then change the prompts to attempt to get photographs.
 
@@ -181,7 +185,8 @@ Prompts (sequentially matched to each image from left to right):
 
 ## Results & Evaluation
 
-# Bibliography
+
+## Bibliography
 1. La Jetée. (2024, June 6). In Wikipedia. https://en.wikipedia.org/wiki/La_Jet%C3%A9e
 2. Talking to Joanna Zylinska. Artificial intelligence in artistic creation., Jose Vertedor, December 2023 - Umática. Revista sobre Creación y Análisis de la Imagen.
 3. The Perception Machine, Joanna Zylinska, 2023, page 136 - Massachusetts Institute of Technology.
