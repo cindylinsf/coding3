@@ -90,15 +90,36 @@ I decided to try stable diffusion since it is a generative text-to-image model. 
 🤖 **Model used:**
 - [[CLIP-Guided Diffusion by EleutherAI](https://www.eleuther.ai/artifacts/clip-guided-diffusion)]
 
-After researching, I found the CLIP-Guided Diffusion model by EleutherAI to successfully generate images with text prompts. 
+After researching, I found the CLIP-Guided Diffusion model by EleutherAI to successfully generate images with text prompts. This particular model is adapted from [[Katherine Crowson's work](https://github.com/crowsonkb/clip-guided-diffusion)]. It uses [[OpenAI's 256x256 unconditional ImageNet diffusion model](https://github.com/openai/guided-diffusion)] together with CLIP to connect text prompts with images. 
 
-This particular model is adapted from [[Katherine Crowson's work](https://github.com/crowsonkb/clip-guided-diffusion)]. It uses [[OpenAI's 256x256 unconditional ImageNet diffusion model](https://github.com/openai/guided-diffusion)] together with CLIP to connect text prompts with images. 
+I adapted EleutherAI's notebook (`06_CLIP Guided Diffusion HQ 256x256` referenced in the `🗂️ Project Files` above) for this. I pulled apart the script and used the stage directions for each prompt, compiled in a Google Doc named `Prompts for The Birds Remake`, referenced in the `🗂️ Project Files` above.
 
-I pulled apart the script and used the stage directions for each prompt, which are compiled in a Google Doc named `Prompts for The Birds Remake`, referenced in the `🗂️ Project Files` above. Each image took about 9 minutes to generate. In the interest of on-time delivery of this project, I only generated the first scene (first 10 prompts) of the script.
+Each image took about 9 minutes to generate. In the interest of on-time delivery for this project, I generated the first scene (first 10 prompts) of the script.
 
 Here are the results:
 
+![Alt text](clip_diffusion_output/1.png)
+![Alt text](clip_diffusion_output/2.png)
+![Alt text](clip_diffusion_output/3.png)
+![Alt text](clip_diffusion_output/4.png)
+![Alt text](clip_diffusion_output/5.png)
+![Alt text](clip_diffusion_output/6.png)
+![Alt text](clip_diffusion_output/7.png)
+![Alt text](clip_diffusion_output/8.png)
+![Alt text](clip_diffusion_output/9.png)
+![Alt text](clip_diffusion_output/10.png)
 
+Prompts (sequentially matched to each image from left to right):
+1. The rain pours down heavily outside the dimly lit bodega.
+2. ANNIE sits at a small table, staring at a bowl of tea glasses.
+3. She glances at her phone
+4. Then She glances back at the door, anxiously waiting.
+5. The door chimes as it opens.
+6. MELANIE rushes in, drenched from the rain.
+7. Melanie pulls a small envelope from her coat pocket.
+7. Melanie hands the envelope to Annie.
+9. Annie nods
+10. Annie slips the envelope into her bag.
 
 ### Stable Diffusion #2
 🗂️ **Project Files:**
@@ -106,6 +127,30 @@ Here are the results:
 
 🤖 **Models used:**
 - [[StabilityAI's SDXL Turbo model on Hugging Face](https://huggingface.co/stabilityai/sdxl-turbo)]
+
+I then ran the same 10 prompts through StabilityAI's SDXL Turbo model, which is meant to be a fast generative model, based on a novel training method called Adversarial Diffusion Distillation (ADD), which allows sampling large-scale foundational image diffusion models in 1 to 4 steps at high image quality. This approach uses score distillation to leverage large-scale off-the-shelf image diffusion models as a teacher signal and combines this with an adversarial loss to ensure high image fidelity even in the low-step regime of one or two sampling steps. [6] The generation was very fast. It took seconds to generate an image.
+
+This time, I would change the prompt slightly where I would change the name of the character to a general descriptor like "a woman" to see if I would get different results. At times, the model generated illustrations instead of photographs. I would then change the prompts to attempt to get photographs.
+
+Prompts (sequentially matched to each image from left to right):
+1. The rain pours down heavily outside the dimly lit bodega.
+2. ANNIE sits at a small table, staring at a bowl of tea glasses.
+2a. A woman sits at a small table, staring at a bowl of tea glasses.
+3. She glances at her phone
+3a. A woman glances at her phone
+4. Then She glances back at the door, anxiously waiting.
+5. The door chimes as it opens.
+6. she rushes in, drenched from the rain.
+6a. she rushes in, drenched from the rain.
+6b. Melanie rushes in, drenched from the rain.
+7. Melanie pulls a small envelope from her coat pocket.
+8. Melanie hands the envelope to Annie.
+9. Annie nods
+9a. she nods
+9b. the woman nods
+10. Annie slips the envelope into her bag.
+10a. she slips the envelope into her bag.
+10b. the woman slips the envelope into her bag.
 
 ### Image Interpolation
 🗂️ **Project Files:**
@@ -119,3 +164,4 @@ Here are the results:
 3. The Perception Machine, Joanna Zylinska, 2023, page 136 - Massachusetts Institute of Technology.
 4. Vertedor-Romero, J.A.. (2023). Editorial. AI-driven art: la inteligencia artificial en el arte y el diseño. UMÁTICA. Revista sobre Creación y Análisis de la Imagen. 9-20. 10.24310/umatica.2023.v5i6.18315. 
 5. The Perception Machine, Joanna Zylinska, 2023, page 139-140 - Massachusetts Institute of Technology.
+6. Stability AI. "SDXL Turbo Model Card." Hugging Face, 2023. Available online: https://huggingface.co/stabilityai/sdxl-turbo
