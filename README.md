@@ -46,7 +46,7 @@ The final script output is recorded in the `final_script_generated_by_gpt4o` Goo
 
 ### StyleGAN-T Generation (FAILED)
 🗂️ **Project File:**
-- [Google Colab Notebook 03 (https://colab.research.google.com/drive/1ntrxQQxkczMidhcOKD5hhbnj5KnA4sod?usp=sharing)]
+- [[Google Colab Notebook 03](https://colab.research.google.com/drive/1ntrxQQxkczMidhcOKD5hhbnj5KnA4sod?usp=sharing)]
 
 🤖 **Model used:**
 - [[StyleGAN-T model](https://github.com/autonomousvision/stylegan-t/blob/main/README.md)]
@@ -55,7 +55,7 @@ Here, I tried to run the generated script through the StyleGAN-T model, which co
 
 ### CLIP Text Encoding
 🗂️ **Project Files:**
-- [Part 1 of Google Colab Notebook 04 (https://colab.research.google.com/drive/1Emp0_7DMXqtKxo7338TxcLxxQTeVtXu8?usp=sharing)]
+- [[Part 1 of Google Colab Notebook 04](https://colab.research.google.com/drive/1Emp0_7DMXqtKxo7338TxcLxxQTeVtXu8?usp=sharing)]
 
 🤖 **Model used:**
 - [[CLIP](https://github.com/openai/CLIP)]
@@ -64,29 +64,49 @@ Here, I used OpenAI's CLIP model. The CLIP text encoding was successful and I sa
 
 ### Mapping to StyleGan 2 Latent Space (FAILED)
 🗂️ **Project Files:**
-- [Part 2 of Google Colab Notebook 04 (https://colab.research.google.com/drive/1Emp0_7DMXqtKxo7338TxcLxxQTeVtXu8?usp=sharing)]
+- [[Part 2 of Google Colab Notebook 04](https://colab.research.google.com/drive/1Emp0_7DMXqtKxo7338TxcLxxQTeVtXu8?usp=sharing)]
 
 🤖 **Model used:**
 - [[StyleGAN 2](https://github.com/NVlabs/stylegan2.git)]
 
 The CLIP encoding was created successfully in the previous step, however, I ran into issues when mapping it to StyleGAN2's latent space.
 
-Originally, ChatGPT helped me write a Mapper function to map out the latent space, but I had issues defining the latent vectors using the code from the StyleGAN2 Read Me file. I could not install a few of the modules required by the model. After trying to re-install and install different versions with no results, I decided to try stable diffusion.
+ChatGPT helped me write a Mapper function to map out the latent space, but I had issues defining the latent vectors using the code from the StyleGAN2 Read Me file. I could not install a few of the modules required by the model. After trying to re-install and install different versions with no results, I decided to try stable diffusion.
+
+### Stable Diffusion (FAILED)
+🗂️ **Project Files:**
+- [[Google Colab Notebook 05](https://colab.research.google.com/drive/1ieXwFiM5GT38Z7mD3_2DgRkq62pHADGd?usp=sharing)]
+
+🤖 **Models used:**
+- Class 7 notebooks
+
+I decided to try stable diffusion since it is a generative text-to-image model. I had issues adapting the Class 7 notebook in the Google Colab environment, where it could not locate the CLIP checkpoint in the `python3.10/dist-packages/torch/serialization.py` file. I was not able to debug this successfully with my limited Python skills.
 
 ### CLIP-Guided Diffusion
 🗂️ **Project Files:**
-🤖 **Model used: [[CLIP-Guided Diffusion by EleutherAI](https://www.eleuther.ai/artifacts/clip-guided-diffusion)]**
+- [[Google Colab Notebook 06](https://colab.research.google.com/drive/1A3iLLQFrVtWMwtyHAbFW05ysFHuS2wNf?usp=sharing)]
+
+🤖 **Model used:**
+- [[CLIP-Guided Diffusion by EleutherAI](https://www.eleuther.ai/artifacts/clip-guided-diffusion)]
 
 I had a lot of issues locating the latent vector to map my text encoding from CLIP to StyleGAN2's latent space due to dependencies being updated and becoming conflicted with each other. After researching, I found the CLIP-Guided Diffusion model by EleutherAI to successfully generate images with text prompts. 
 
 This particular model is adapted from [Katherine Crowson(https://twitter.com/RiversHaveWings)]'s [work (https://github.com/crowsonkb/clip-guided-diffusion)]. It uses [OpenAI's 256x256 unconditional ImageNet diffusion model (https://github.com/openai/guided-diffusion)] together with [CLIP (https://github.com/openai/CLIP)] to connect text prompts with images. 
 
+Each image takes about 9 minutes to generate. In the interest of on-time delivery of this project, I only generated the first scene (first 10 prompts) of the script.
+
+Full list of prompts: https://docs.google.com/document/d/1CxwlhFuR-utL1xmJVt2GeadrJO1squYzX-DkUVv6Cv0/edit?usp=sharing 
+
+### Stable Diffusion #2
+🗂️ **Project Files:**
+- [[Google Colab Notebook 07](https://colab.research.google.com/drive/1LK7CT87Ui-YsE0CG966QbcX2DffzVIZf?usp=sharing)]
+
+🤖 **Models used:**
+- [[StabilityAI's SDXL Turbo model on Hugging Face](https://huggingface.co/stabilityai/sdxl-turbo)]
+
 ### Image Interpolation
 🗂️ **Project Files:**
 
-Each image takes about 9 minutes to generate. In the interest of on-time delivery of this project, I generated the first scene (first 10 prompts) of the script and interpolated the 10 images by adapting the code from the Class 7 notebook.
-
-Full list of prompts: https://docs.google.com/document/d/1CxwlhFuR-utL1xmJVt2GeadrJO1squYzX-DkUVv6Cv0/edit?usp=sharing 
 
 ## Results & Evaluation
 
