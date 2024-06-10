@@ -86,6 +86,7 @@ I decided to try stable diffusion since it is a generative text-to-image model. 
 🗂️ **Project Files:**
 - [[Google Colab Notebook 06](https://colab.research.google.com/drive/1A3iLLQFrVtWMwtyHAbFW05ysFHuS2wNf?usp=sharing)]
 - [[The full list of prompts derived from the script](https://docs.google.com/document/d/1CxwlhFuR-utL1xmJVt2GeadrJO1squYzX-DkUVv6Cv0/edit?usp=sharing)]
+- [[Output images](clip_diffusion_output)]
 
 🤖 **Model used:**
 - [[CLIP-Guided Diffusion by EleutherAI](https://www.eleuther.ai/artifacts/clip-guided-diffusion)]
@@ -124,6 +125,7 @@ Prompts (sequentially matched to each image from left to right):
 ### Stable Diffusion #2
 🗂️ **Project Files:**
 - [[Google Colab Notebook 07](https://colab.research.google.com/drive/1LK7CT87Ui-YsE0CG966QbcX2DffzVIZf?usp=sharing)]
+- [[Output images](stable_diffusion_sdxl_output)]
 
 🤖 **Models used:**
 - [[StabilityAI's SDXL Turbo model on Hugging Face](https://huggingface.co/stabilityai/sdxl-turbo)]
