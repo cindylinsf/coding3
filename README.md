@@ -183,6 +183,8 @@ Prompts (sequentially matched to each image from left to right):
 Finally, I took both sets of images and ran them through [[RunwayML](https://app.runwayml.com/)]'s frame interpolation tool to interpolate the images.
 
 [Link to the video](https://app.runwayml.com/creation/9d3e3147-14e1-4602-ab1f-794522023dc1)
+<a href="https://app.runwayml.com/creation/9d3e3147-14e1-4602-ab1f-794522023dc1" target="_blank">Link to the CLIP-Guided Diffusion results video</a>
+
 
 ## Results & Evaluation
 
