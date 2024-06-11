@@ -195,8 +195,13 @@ Finally, I took both sets of images and ran them through [[RunwayML](https://app
 ### CLIP-Guided Diffusion vs. Stable Diffusion SDXL Turbo
 In CLIP-Guided Diffusion, CLIP (Contrastive Language-Image Pretraining) is a text-guide, where the user inputs a prompt, and the image is influenced by the text description.  Diffusion models can be thought of as an additive process where random noise is added to an image, and the model interprets the noise into a rational image. These models tend to produce a wider range of results than adversarial GAN models.[8]
 
+Below is a typical Guided Diffusion process from beginning to end. Gaussian noise is added to an image, and then the image is de-noised, imagining new objects. This de-noising process continues, adding definition and detail to the objects imagined by the model. [9]
 
-![clip-guided diffusion illustration by Adam Heisserner](clip_guided_diffusion_by_adam_heisserner.png)
+![clip-guided diffusion illustration by Adam Heisserner](clip_guided_diffusion_by_adam_heisserner.png) [9]
+
+SDXL-Turbo is a text-to-image model that is based on a novel distillation technique called Adversarial Diffusion Distillation (ADD), which enables the model to synthesize image outputs in a single step and generate real-time text-to-image outputs while maintaining high sampling fidelity. By incorporating ADD, SDXL Turbo gains many advantages shared with GANs (Generative Adversarial Networks), such as single-step image outputs, while avoiding artifacts or blurriness often observed in other distillation methods. [10]
+
+![StabilityAI_ADD_performance_comparison](SDXL_ADD_performance.png) [10]
 
 ### The role of AI in work making process
 One of the key elements that that drew me to machine learning is its "randomness" where we have no real control over what is generated. We can set parameters, but it can be temperamental and we can overtrain the model easily. There are no exact parameters or the exact number of iterations until we test and experiment with it. 
@@ -232,3 +237,6 @@ After this project, I realized that I underestimated the intensity of the worklo
 6. Stability AI. "SDXL Turbo Model Card." Hugging Face, 2023. Available online: https://huggingface.co/stabilityai/sdxl-turbo
 7. CBC Radio. "The Birds: Hitchcock's Film as Horror Metaphor." CBC Radio, https://www.cbc.ca/radio/ideas/the-birds-hitchcock-film-horror-metaphor-1.6957945
 8. Heisserer, Adam. "StyleGAN2 + CLIP Guided Diffusion." Adam Heisserer's Blog, 2021. Available online: https://www.adamheisserer.com/blog-research/2021/12/30/stylegan2-clip-guided-diffusion
+9. Heisserer, Adam. "StyleGAN2 + CLIP Guided Diffusion." Adam Heisserer's Blog, 2021. Available online: https://www.adamheisserer.com/blog-research/2021/12/30/stylegan2-clip-guided-diffusion
+10. Stability AI. "Stability AI SDXL Turbo." Stability AI News, https://stability.ai/news/stability-ai-sdxl-turbo
+11. Axel Sauer, Dominik Lorenz, Andreas Blattmann, Robin Rombach. "Adversarial Diffusion Distillation" StabilityAI, 2023. Available online: https://static1.squarespace.com/static/6213c340453c3f502425776e/t/65663480a92fba51d0e1023f/1701197769659/adversarial_diffusion_distillation.pdf 
