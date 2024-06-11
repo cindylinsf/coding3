@@ -204,7 +204,6 @@ Finally, I took both sets of images and ran them through RunwayML's frame interp
 <a href="https://app.runwayml.com/creation/7825d0ec-9836-4317-947f-150a53fa3862" target="_blank">Link to the SDXL-Turbo results video</a>
 
 ## Results & Evaluation
-### Prompt Engineering
 
 ### CLIP-Guided Diffusion vs. Stable Diffusion SDXL Turbo
 In CLIP-Guided Diffusion, CLIP (Contrastive Language-Image Pretraining) is a text-guide, where the user inputs a prompt, and the image is influenced by the text description.  Diffusion models can be thought of as an additive process where random noise is added to an image, and the model interprets the noise into a rational image. These models tend to produce a wider range of results than adversarial GAN models.[8]
@@ -227,6 +226,13 @@ The CLIP-Guided Diffusion process takes significantly longer to generate results
 
 The CLIP-Guided Diffusion model generation focused on the envelope itself. Instead of rendering Melanie or Annie pulling, taking, or slipping the envelope into a bag, the model only rendered the envelope itself and adding the name of the person from the prompt onto the rendered image. Compared to the SDXL-Turbo model, where it rendered these actions in the outputs.
 
+### Prompt Engineering
+To render a successful film as Zynlinska did, prompt engineering plays a key role in successful image generation. I didn't take the time to cull through the four scripts that were generated to pick out the interesting bits to rewrite the prompts. I was rather passive in the process where I just collated the scripts and fed the whole thing to ChatGPT4o. So the results were generic because the draft was mostly nonsensical but with repeated elements like the character names: Mitch, Annie, Melanie, and the birds. That was probably what ChatGPT4o picked up and was able to present in the final script. 
+
+Zynlinska only selected a handful of lines from the original scripts and fed them through the GPT2 model to generate. She was more of a co-creator in the creation process, whereas I was more like a passenger, going along for the ride and waiting to see what would happen. 
+
+I also noticed that during the text-to-image generation process, if I used the character's name "Annie" in the prompt for the SDXL-Turbo model, it consistently illustrated a red hair young woman/girl with short hair. This is probably due to the influence of _Anne of Green Gables_, a classic children's novel, where this particular style of illustration is linked to the name "Annie." After I changed "Annie" to "she," "her" or "a woman," then the model produced images without Anne-inspired influence. It even rendered a dog once. 
+
 ### The role of AI in work making process
 One of the key elements that that drew me to machine learning is its "randomness" where we have no real control over what is generated. We can set parameters, but it can be temperamental and we can overtrain the model easily. There are no exact parameters or the exact number of iterations until we test and experiment with it. 
 
@@ -246,10 +252,17 @@ In comparison, the GPT-2 generated scripts, while mostly nonsensical and full of
 
 > "Back in Melanie's house, Mitch is quick about this, nodding wildly trying to take equipment and caging violins into his collection bags and some other place."
 
-It is as if the AI is dreaming and we are capturing fragments of its mind and products in the generative text. It is almost Freudian, that we as creators, pick up the fragments and bits that make sense to develop further. Just like Zylinska writes, in this co-creation process, we are "intentionally serving as both a dream catcher and analyst in the creation process." [5]
+It is as if the AI is dreaming and we are capturing fragments of its mind and products in the generative text. It is almost Freudian, that we as creators, pick up the fragments and bits that make sense to develop further. Just like Zylinska writes, in this co-creation process, we are "intentionally serving as both a dream catcher and analyst in the creation process." [12]
 
-### Overall 
-After this project, I realized that I underestimated the intensity of the workload required to create work with machine learning models. One of the key successes in Zylinska's work stems from prompt engineering. 
+### The invisible labor in machine learning
+The invisible labor in machine learning is often underappreciated, yet it is critical for achieving high-quality results, like Zylinska's film. Through this project, I gained a deeper understanding of the extensive workload involved in producing complete work with machine learning models. This aligns with the experiences of other artists and researchers in the field. One of the key successes in Zylinska's work stems from aggressively curating words and images. During this process, she generated thousands of images and used less than 100 to produce the film. Similarly, as Anna Ridler points out through her work _Myriad (Tulips)_: 
+
+> The process of making datasets is almost like craft - repetitive, time-consuming, often unauthored, but necessary in order to produce something beautiful. And there is a skill to it (something that is recognised by copyright law). If the dataset is too big, if there are too many images, the results will be too good, and the quirks and oddities that make it an interesting medium to explore will disappear; if it is too small it will not have enough information and become flummoxed, either producing nothing or one or two variations from the training set again and again. Therefore each photograph is carefully selected, as part of an iterative process, to produce the type of result that I desired. [13]
+
+Just like working with machine learning models, the process of creating artistic work also requires fine-tuning, patience, curation, and invisible labor to create the results we desire as creators. Whether it is a co-creation process with AI or even a passive generative process, decisions still need to be made by the artist every step of the way.
+
+The unseen efforts in dataset preparation, parameter tuning, and iterative refining are analogous to the painstaking tasks in traditional artistic practices. These efforts, while often hidden behind the final product, are fundamental to the success and quality of the work produced. Recognizing and valuing this invisible labor is essential, not only for appreciating the artistry involved but also for understanding the true complexity and dedication required in the field of machine learning and AI-driven art. As we continue to explore and innovate with AI, it is crucial to recognize the unseen efforts that drive these advancements forward.
+
 
 
 ## Bibliography
@@ -263,4 +276,8 @@ After this project, I realized that I underestimated the intensity of the worklo
 8. Heisserer, Adam. "StyleGAN2 + CLIP Guided Diffusion." Adam Heisserer's Blog, 2021. Available online: https://www.adamheisserer.com/blog-research/2021/12/30/stylegan2-clip-guided-diffusion
 9. Heisserer, Adam. "StyleGAN2 + CLIP Guided Diffusion." Adam Heisserer's Blog, 2021. Available online: https://www.adamheisserer.com/blog-research/2021/12/30/stylegan2-clip-guided-diffusion
 10. Stability AI. "Stability AI SDXL Turbo." Stability AI News, https://stability.ai/news/stability-ai-sdxl-turbo
-11. Axel Sauer, Dominik Lorenz, Andreas Blattmann, Robin Rombach. "Adversarial Diffusion Distillation" StabilityAI, 2023. Available online: https://static1.squarespace.com/static/6213c340453c3f502425776e/t/65663480a92fba51d0e1023f/1701197769659/adversarial_diffusion_distillation.pdf 
+11. Axel Sauer, Dominik Lorenz, Andreas Blattmann, Robin Rombach. "Adversarial Diffusion Distillation" StabilityAI, 2023. Available online: https://static1.squarespace.com/static/6213c340453c3f502425776e/t/65663480a92fba51d0e1023f/1701197769659/adversarial_diffusion_distillation.pdf
+12. The Perception Machine, Joanna Zylinska, 2023, page 139-140 - Massachusetts Institute of Technology.
+13. Ridler, Anna. "Myriad Tulips." Anna Ridler's Portfolio, https://annaridler.com/myriad-tulips
+
+
