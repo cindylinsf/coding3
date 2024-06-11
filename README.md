@@ -41,7 +41,7 @@ When I came across Zylinska's work, I too wanted to experiment with AI models an
 
 For this part of the project, I adapted the Class 5 notebooks to create and prepare a new dataset by using [[the original 1962 film script](http://www.script-o-rama.com/movie_scripts/b/the-birds-script-screenplay.html)] and generate new scripts by adapting Class 5 notebooks. 
 
-A separate tokenization was not needed with the Class 5 notebooks, but since I was curious about the tokenization process, I tokenized the film script using Andrej Karapthy's minibpe repo mentioned in the class notebook. The results and the Google Colab notebook `00_tokenize_script` are referenced above under `🗂️ Project Files`.
+A separate tokenization was not needed with the Class 5 notebooks, but since I was curious about the tokenization process, I tokenized the film script using Andrej Karapthy's minibpe repo mentioned in the class notebook. The results and the .ipynb notebook `00_tokenize_script` are referenced above under `🗂️ Project Files`.
 
 In notebook `01_new_script_genreation`, I first tried to train the model from scratch. The results were mostly gibberish. Then, in the notebook `02_new_script_genreation_by_finetuning`, I fined-tuned the GPT2 model, which generated results that were much more coherent. 
 
