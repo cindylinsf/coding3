@@ -193,6 +193,9 @@ Finally, I took both sets of images and ran them through [[RunwayML](https://app
 ### Prompt Engineering
 
 ### CLIP-Guided Diffusion vs. Stable Diffusion SDXL Turbo
+In CLIP-Guided Diffusion, CLIP (Contrastive Language-Image Pretraining) is a text-guide, where the user inputs a prompt, and the image is influenced by the text description.  Diffusion models can be thought of as an additive process where random noise is added to an image, and the model interprets the noise into a rational image. These models tend to produce a wider range of results than adversarial GAN models.[8]
+
+![alt text](CLIP-Guided Diffusion Illustration by Adam Heisserer.png)
 
 ### The role of AI in work making process
 One of the key elements that that drew me to machine learning is its "randomness" where we have no real control over what is generated. We can set parameters, but it can be temperamental and we can overtrain the model easily. There are no exact parameters or the exact number of iterations until we test and experiment with it. 
@@ -227,3 +230,4 @@ After this project, I realized that I underestimated the intensity of the worklo
 5. The Perception Machine, Joanna Zylinska, 2023, page 139-140 - Massachusetts Institute of Technology.
 6. Stability AI. "SDXL Turbo Model Card." Hugging Face, 2023. Available online: https://huggingface.co/stabilityai/sdxl-turbo
 7. CBC Radio. "The Birds: Hitchcock's Film as Horror Metaphor." CBC Radio, https://www.cbc.ca/radio/ideas/the-birds-hitchcock-film-horror-metaphor-1.6957945
+8. Heisserer, Adam. "StyleGAN2 + CLIP Guided Diffusion." Adam Heisserer's Blog, 2021. Available online: https://www.adamheisserer.com/blog-research/2021/12/30/stylegan2-clip-guided-diffusion
