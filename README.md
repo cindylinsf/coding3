@@ -195,7 +195,8 @@ Finally, I took both sets of images and ran them through [[RunwayML](https://app
 ### CLIP-Guided Diffusion vs. Stable Diffusion SDXL Turbo
 In CLIP-Guided Diffusion, CLIP (Contrastive Language-Image Pretraining) is a text-guide, where the user inputs a prompt, and the image is influenced by the text description.  Diffusion models can be thought of as an additive process where random noise is added to an image, and the model interprets the noise into a rational image. These models tend to produce a wider range of results than adversarial GAN models.[8]
 
-![alt text](CLIP-Guided Diffusion Illustration by Adam Heisserer.png)
+
+![clip-guided diffusion illustration by Adam Heisserner](clip_guided_diffusion_illustration.png)
 
 ### The role of AI in work making process
 One of the key elements that that drew me to machine learning is its "randomness" where we have no real control over what is generated. We can set parameters, but it can be temperamental and we can overtrain the model easily. There are no exact parameters or the exact number of iterations until we test and experiment with it. 
