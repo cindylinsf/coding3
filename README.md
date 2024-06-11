@@ -197,11 +197,21 @@ In CLIP-Guided Diffusion, CLIP (Contrastive Language-Image Pretraining) is a tex
 
 Below is a typical Guided Diffusion process from beginning to end. Gaussian noise is added to an image, and then the image is de-noised, imagining new objects. This de-noising process continues, adding definition and detail to the objects imagined by the model. [9]
 
-![clip-guided diffusion illustration by Adam Heisserner](clip_guided_diffusion_by_adam_heisserner.png) [9]
+![clip-guided diffusion illustration by Adam Heisserner](clip_guided_diffusion_by_adam_heisserner.png) 
+[9]
 
-SDXL-Turbo is a text-to-image model that is based on a novel distillation technique called Adversarial Diffusion Distillation (ADD), which enables the model to synthesize image outputs in a single step and generate real-time text-to-image outputs while maintaining high sampling fidelity. By incorporating ADD, SDXL Turbo gains many advantages shared with GANs (Generative Adversarial Networks), such as single-step image outputs, while avoiding artifacts or blurriness often observed in other distillation methods. [10]
+SDXL-Turbo is a text-to-image model that is based on a novel distillation technique called Adversarial Diffusion Distillation (ADD), which enables the model to synthesize image outputs in a single step and generate real-time text-to-image outputs while maintaining high sampling fidelity. By incorporating ADD, SDXL Turbo gains many advantages shared with GANs (Generative Adversarial Networks), such as single-step image outputs, while avoiding artifacts or blurriness often observed in other distillation methods. It also outperforms other models, as shown in the comparison below. [10]
 
-![StabilityAI_ADD_performance_comparison](SDXL_ADD_performance.png) [10]
+![StabilityAI_ADD_performance_comparison](SDXL_ADD_performance.png) 
+[10]
+
+The CLIP-Guided Diffusion process takes significantly longer to generate results compared to the SDXL-Turbo model, from 9 minutes to mere seconds. The image qualities are also significantly different. SDXL-Turbo model produced results that were more aligned with the prompts, even though there are still issues with rendering fingers and facial features accurately. The CLIP-Guided Diffusion model often focuses on only one key element of the prompt, whereas the SDXL-Turbo model was able to interpret the prompt as a scene or an action. A very clear example of this is the prompts in regard to the envelope: 
+
+> 7. Melanie pulls a small envelope from her coat pocket.
+> 8. Melanie hands the envelope to Annie.
+> 10. Annie slips the envelope into her bag.
+
+The CLIP-Guided Diffusion model generation focused on the envelope itself. Instead of rendering Melanie or Annie pulling, taking, or slipping the envelope into a bag, the model only rendered the envelope itself and adding the name of the person from the prompt onto the rendered image. Compared to the SDXL-Turbo model, where it rendered these actions in the outputs.
 
 ### The role of AI in work making process
 One of the key elements that that drew me to machine learning is its "randomness" where we have no real control over what is generated. We can set parameters, but it can be temperamental and we can overtrain the model easily. There are no exact parameters or the exact number of iterations until we test and experiment with it. 
