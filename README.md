@@ -263,7 +263,9 @@ Just like working with machine learning models, the process of creating artistic
 
 The unseen efforts in dataset preparation, parameter tuning, and iterative refining are analogous to the painstaking tasks in traditional artistic practices. These efforts, while often hidden behind the final product, are fundamental to the success and quality of the work produced. Recognizing and valuing this invisible labor is essential, not only for appreciating the artistry involved but also for understanding the true complexity and dedication required in the field of machine learning and AI-driven art. As we continue to explore and innovate with AI, it is crucial to recognize the unseen efforts that drive these advancements forward.
 
-
+## AI tool disclosure
+- In the event that ChatGPT or GitHub Co-Pilot is utilized, this is noted within the notebooks. 
+- Grammarly is used during the writing process to correct grammar and spelling errors in the README. 
 
 ## Bibliography
 1. La Jetée. (2024, June 6). In Wikipedia. https://en.wikipedia.org/wiki/La_Jet%C3%A9e
