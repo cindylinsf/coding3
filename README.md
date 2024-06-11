@@ -1,6 +1,6 @@
 # Remaking Hitchcock's 1963 film _The Birds_
 
-| :open_file_folder:        | ALL FILES in regards to this project are here: [[Google Drive Files for this Project](https://drive.google.com/drive/folders/1GDVN3x3jcEExj150KVBS02H0M8h5oB02?usp=drive_link)]       |
+| :mag:        | ALL project files can be found here: [[Google Drive Files for this Project](https://drive.google.com/drive/folders/1GDVN3x3jcEExj150KVBS02H0M8h5oB02?usp=drive_link)]       |
 |---------------|:---------------------------------------------|
 
 | :zap:        | In each section of the README, related project files are also referenced in section headers.       |
@@ -11,14 +11,16 @@
 
 This project is inspired by Joanna Zylinska's work [_The Gift of the World (Oedipus on the Jetty)_](https://www.nonhuman.photography/perception-machine), a remake of [_La Jetée_](https://www.youtube.com/watch?v=DQ4jFYTTjAU).
 
-_La Jetée_ is a 1962 French science fiction featurette directed by Chris Marker and associated with the Left Bank artistic movement. Constructed almost entirely from still photos, it tells the stable time loop story of a post-nuclear war experiment in time travel. It is 28 minutes long and shot in black and white. [1] To create this work, Zylinska generated the new script by feeding selected lines from _La Jetée_'s original script to GPT-2, which took the film in an unexpected new direction by rewriting the very masculine story of salvation present in _La Jetée_ as a gender-fluid polyvocal counter-apocalypse.[2] To produce the film, she combined a variety of photorealistic AI models such as GANs, Diffusion, and CLIP. [3]
+_La Jetée_ is a 1962 French science fiction featurette directed by Chris Marker and associated with the Left Bank artistic movement. Constructed almost entirely from still photos, it tells the stable time loop story of a post-nuclear war experiment in time travel. It is 28 minutes long and shot in black and white. [1]
+
+To create this work, Zylinska generated the new script by feeding selected lines from _La Jetée_'s original script to GPT-2, which rewrote the very masculine story of salvation present in _La Jetée_ as a gender-fluid polyvocal counter-apocalypse.[2] It was a very notable and surprising twist compared to other similar works, such as the 1995 film _12 Monkeys_ or the 2024 side-by-side remake by Adrian Goycoolea. To produce the film, she combined several photorealistic AI models such as GANs, Diffusion, and CLIP. [3]
 
 ![Zylinska (2023), Composite of frames from A Gift of the World (Oedipus on the Jetty), [Photofilm, 2021]. © Zylinska, 2023 (Cortesía de la Autora)](Zylinska-2023-Composite-of-frames-from-A-Gift-of-the-World-Oedipus-on-the-Jetty.png)
 Zylinska (2023), Composite of frames from A Gift of the World (Oedipus on the Jetty), [Photofilm, 2021]. © Zylinska, 2023 (Cortesía de la Autora) [4]
 
 For Zylinska, the editing process was intuitive and consisted of her own visual and corporeal responses to both the script and the GAN images, which she references as a dream-like state, where neural networks find patterns in images not so much in a logical preprogrammed way but rather by using previous data and memories as prompts for making new connections between data points and for generating new data. In this work, she finds herself dreaming _with_ but also _against_ the AI algorithm underpinning the model. The "counterdream" aspect was critical given the sociopolitical limitations of AI technology, which have been well documented by feminist and decolonial cultural critics, revealing not only gender and racial bias but also the exclusionary and unjust logic underlying many of its founding principles. Not to mention its extractivism when it comes to both human and natural resources. Zylinska was curious about what AI would do to the source material, while intentionally serving as both a dream catcher and analyst in the creation process. [5]
 
-When I came across Zylinska's project, I thought it was interesting how GPT-2 flipped the gender narrative of the original film, which shifted the premise of the film dramatically. The abstract images created by StyleGAN was also very interesting. Human faces were re-interpreted with these kidneys-liked eyees. Inspired by this, I chose to experiment with Hitchcock's _The Birds_, a film from a similar era with a male-centric storyline lacking female perspectives, perpetuating sexist stereotypes, and depicting violence against women. I also wanted to see if any biases would be reflected in the AI-generated outcomes.
+When I came across Zylinska's work, I too wanted to experiment with AI models and see where it could take the work. I found it interesting that GPT-2 flipped the gender narrative of the original film, which shifted the premise of the film dramatically. The abstract images created by StyleGAN were also very interesting aesthetically. Human faces were re-interpreted with kidneys-liked eyes and their distorted figures reminded me of Dali paintings. Inspired by this, I chose to experiment with Hitchcock's _The Birds_, a film from a similar era, also with a male-centric storyline where it lacked female perspectives, perpetuating sexist stereotypes, and depicting violence against women. I also wanted to see if any biases would be reflected in the AI-generated outcomes.
 
 ## Approach & Process
 
