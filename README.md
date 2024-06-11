@@ -1,6 +1,13 @@
 # Remaking Hitchcock's 1963 film _The Birds_
 
-🗂️ **Project Files: [[Google Drive Files for this Project](https://drive.google.com/drive/folders/1GDVN3x3jcEExj150KVBS02H0M8h5oB02?usp=drive_link)]**
+| :open_file_folder:        | ALL FILES in regards to this project are here: [[Google Drive Files for this Project](https://drive.google.com/drive/folders/1GDVN3x3jcEExj150KVBS02H0M8h5oB02?usp=drive_link)]       |
+|---------------|:---------------------------------------------|
+
+| :zap:        | In each section of the README, related project files are also referenced in section headers.       |
+|---------------|:---------------------------------------------|
+
+
+## Introduction
 
 This project is inspired by Joanna Zylinska's work [_The Gift of the World (Oedipus on the Jetty)_](https://www.nonhuman.photography/perception-machine), a remake of [_La Jetée_](https://www.youtube.com/watch?v=DQ4jFYTTjAU).
 
