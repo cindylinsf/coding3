@@ -190,7 +190,9 @@ Finally, I took both sets of images and ran them through [[RunwayML](https://app
 <a href="https://app.runwayml.com/creation/7825d0ec-9836-4317-947f-150a53fa3862" target="_blank">Link to the SDXL-Turbo results video</a>
 
 ## Results & Evaluation
-### 
+### Prompt Engineering
+
+### CLIP-Guided Diffusion vs. Stable Diffusion SDXL Turbo
 
 ### The role of AI in work making process
 One of the key elements that that drew me to machine learning is its "randomness" where we have no real control over what is generated. We can set parameters, but it can be temperamental and we can overtrain the model easily. There are no exact parameters or the exact number of iterations until we test and experiment with it. 
@@ -213,6 +215,8 @@ In comparison, the GPT-2 generated scripts, while mostly nonsensical and full of
 
 It is as if the AI is dreaming and we are capturing fragments of its mind and products in the generative text. It is almost Freudian, that we as creators, pick up the fragments and bits that make sense to develop further. Just like Zylinska writes, in this co-creation process, we are "intentionally serving as both a dream catcher and analyst in the creation process." [5]
 
+### Overall 
+After this project, I realized that I underestimated the intensity of the workload required to create work with machine learning models. One of the key successes in Zylinska's work stems from prompt engineering. 
 
 
 ## Bibliography
